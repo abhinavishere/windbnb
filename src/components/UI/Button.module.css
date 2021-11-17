@@ -1,0 +1,17 @@
+.button {
+  padding: 1.2rem 1.4rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+}
+
+.button:focus {
+  outline: none;
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+
+.button > svg {
+  color: #fff;
+}

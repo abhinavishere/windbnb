@@ -1,0 +1,19 @@
+.header {
+  padding: 1.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.logo > img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    max-width: 120rem;
+    margin-inline: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
