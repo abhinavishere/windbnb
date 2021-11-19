@@ -5,12 +5,12 @@ import PropertyItem from "./PropertyItem";
 
 const PropertyDrawer = () => {
   const stayCtx = useContext(StayContext);
-  const filteredStaysByLocation = stayCtx.filter(
-    (item) => item.city === "Helsinki"
-  );
+  // const filteredStaysByLocation = stayCtx.filter(
+  //   (item) => item.city === "Helsinki"
+  // );
   // console.log(filteredStaysByLocation);
-  const location = filteredStaysByLocation[0].country;
-  const numberOfStays = filteredStaysByLocation.length;
+  const location = stayCtx[0].country;
+  const numberOfStays = stayCtx.length;
   return (
     <main className={classes.drawer}>
       <div className={classes.drawerHeader}>
@@ -18,7 +18,7 @@ const PropertyDrawer = () => {
         <span>{numberOfStays}+ Stays</span>
       </div>
       <ul className={classes.drawerGrid}>
-        {filteredStaysByLocation.map((item, index) => (
+        {stayCtx.map((item, index) => (
           <PropertyItem
             src={item.photo}
             alt={item.title}

@@ -1,6 +1,5 @@
 .drawer {
   padding: var(--p-mobile);
-  /* border: 1px solid red; */
 }
 
 .drawerHeader {
@@ -18,6 +17,7 @@
 }
 
 .drawerGrid {
+  margin-top: 3rem;
   list-style: none;
   width: 100%;
   padding-inline-start: 0;
@@ -34,7 +34,6 @@
 
   .drawerGrid {
     display: grid;
-    /* justify-items: center; */
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   }
 }
@@ -50,6 +49,7 @@
     font-size: 1.6rem;
   }
   .drawerGrid {
-    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    /* row-gap: 10rem; */
   }
 }
