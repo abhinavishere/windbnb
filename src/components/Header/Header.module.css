@@ -1,8 +1,12 @@
 .header {
-  padding: 1.8rem 1.2rem;
+  padding: var(--p-mobile);
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+}
+
+.logo {
+  display: block;
 }
 
 .logo > img {
@@ -11,9 +15,20 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 120rem;
+    max-width: var(--max-w-main);
     margin-inline: auto;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo > img {
+    height: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: var(--p-1024);
   }
 }

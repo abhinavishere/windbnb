@@ -1,0 +1,28 @@
+.footer {
+  /* border: 1px solid red; */
+  padding: var(--p-mobile);
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  color: black;
+}
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: var(--max-w-main);
+    margin-inline: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: var(--p-1024);
+  }
+}

@@ -11,8 +11,10 @@
 
 :root {
   --accent: #eb5757e5;
-
   --accent-dark: rgb(255, 0, 64);
+  --p-mobile: 1.8rem 1.2rem;
+  --p-1024: 1.8rem 2.4rem;
+  --max-w-main: 120rem;
 }
 
 /* reset default root fontsize */
@@ -51,6 +53,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  width: 100vw;
+  overflow-x: hidden;
+  text-align: center;
 }
 
 /* A elements that don't have a class get default styles */

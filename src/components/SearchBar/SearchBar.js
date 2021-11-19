@@ -2,7 +2,7 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import classes from "./SearchBar.module.css";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   return (
     <form className={classes.search}>
       <div>
